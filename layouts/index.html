@@ -11,6 +11,14 @@
 		{{ partial "recent-posts" . }}
 	{{ end }}
 
+	{{ if not .Site.Params.guides.hide }}
+		{{ partial "recent-guides" . }}
+	{{ end }}
+
+	{{ if not .Site.Params.resources.hide }}
+		{{ partial "recent-resources" . }}
+	{{ end }}
+
 	{{ if not .Site.Params.contact.hide }}
 		{{ partial "contact" . }}
 	{{ end }}

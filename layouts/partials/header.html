@@ -3,6 +3,9 @@
 	{{ if not .Site.Params.avatar.hide }}
 	<a href="{{ .Site.BaseURL }}" class="image avatar"><img src="{{ .Site.BaseURL }}images/{{ .Site.Params.sidebar.avatar }}" alt="" /></a>
 	{{ end }}
+	{{ with .Site.Params.sidebar.name }}
+		<h1>{{ . | markdownify }}</h1>
+	{{ end }}
 	{{ with .Site.Params.sidebar.bio }}
 		<h1>{{ . | markdownify }}</h1>
 	{{ end }}
