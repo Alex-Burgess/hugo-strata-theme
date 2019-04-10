@@ -1,0 +1,10 @@
+{{ if isset .Params "description" }}
+  <p>
+      {{ .Params.Description }}
+  </p>
+{{ end }}
+
+
+{{ if isset .Params "image" }}
+    <img src="{{ $.Site.BaseURL }}images/{{ .Params.image }}" alt="" class="image fit"/>
+{{ end }}

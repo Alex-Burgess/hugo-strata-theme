@@ -3,11 +3,9 @@
 		<h1>{{ .Title }}</h1>
 
 		{{ partial "post-meta" . }}
-	</span>
 
-	<p>
-			{{ .Description }}
-	</p>
+		{{ partial "post-summary" . }}
+	</span>
 
 	<p>
 	    {{ .Content }}
