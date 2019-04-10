@@ -9,7 +9,7 @@
 		<article class="6u 12u$(xsmall) work-item">
       <a href="{{ .Permalink }}" class="image fit thumb"><img src="{{ $.Site.BaseURL }}images/{{ .Params.thumb }}" alt="" /></a>
       <h3>{{ .Title | markdownify }}</h3>
-			<p>{{ .Description | markdownify }}</p>
+			<p>{{ .Params.Short_description | markdownify }}</p>
 		</article>
 		{{ end }}
 	</div>
