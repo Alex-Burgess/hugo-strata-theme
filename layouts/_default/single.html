@@ -11,7 +11,5 @@
 	    {{ .Content }}
 	</p>
 
-	{{ with .Site.Params.disqusShortname }}
-		{{ template "_internal/disqus.html" . }}
-	{{ end }}
+	{{ template "_internal/disqus.html" . }}
 {{ end }}
